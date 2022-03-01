@@ -1,0 +1,291 @@
+:root{
+    --white-color:#fff;
+    --black-color:#111;
+    --text-color:#333;
+    --primary-color:#0996e2;
+    --border-color:#dbdbdb; 
+    --star-gold:#FFCE3E;
+    --header-height:171px;
+}
+
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html{
+    font-size: 62,5%;
+    line-height: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #edefed;
+}
+
+header{
+    background-color: var(--white-color);
+}
+
+main{
+    background-color: #edefed;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.site-header-top{
+    height: 50px;
+}
+
+.hover-color-text:hover{
+    color: var(--black-color);
+    text-decoration: none;
+    opacity: 1;
+}
+
+.mg-left-right-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes growth{
+    from{
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growth-to));
+    }
+}
+
+@keyframes headerLogoGrowth{
+    from{
+        opacity: 0;
+        top: 200%;
+    }
+    to{
+        opacity: 1;
+        top: 130%;
+    }
+}
+
+@keyframes headerLogoDrop{
+    from{
+        opacity: 1;
+        top: 130%;
+    }
+    to{
+        opacity: 0;
+        top: 1000%;
+    }
+}
+
+@keyframes mainProductButton{
+    0%{
+        opacity: 0;
+        right: -3%;
+    }
+    100%{
+        opacity: 1;
+        right:0%;
+    }
+}
+
+@keyframes ProductButton{
+    0%{
+        opacity: 0;
+        right: -3%;
+    }
+    100%{
+        opacity: 1;
+        right:6%;
+    }
+}
+
+/* Button Style*/
+.btn{
+    min-width: 60px;
+    height: 39px;
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0 12px;
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+    background-color: var(--white-color);
+}
+
+.btn.btn--size-s{
+    height: 32px;
+    padding: 0 8px;
+}
+
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disable{
+    cursor: default;
+    background-color: #c3c3c3;
+    color: #949494;
+}
+
+/* Selection */
+
+.select-input{
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    cursor: pointer;
+    position: relative;
+}
+
+.select-input::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 18px;
+    top: 24px;
+    left: 0;
+    cursor: pointer;
+}
+
+.select-input:hover .select-input__list{
+    display: block;
+}
+
+.select-input__label{
+    font-size: 14px;
+}
+
+.select-input__icon{
+    font-size: 0.6rem;
+    color: #4A4A4A;
+    padding-top: 2px;
+}
+
+.select-input__list{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 35px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 10px 12px;
+    list-style: none;
+    display: none;
+    box-shadow: 0 2px 2px #e0e0e0;
+}
+
+.select-input__link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    display: block;
+    padding: 5px 0;
+}
+
+.select-input__link:hover{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/*Pagination*/
+.page{
+    float:left;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-item{
+    margin: 0 12px;
+}
+
+.pagination-item--active .pagination-item__link{
+    color: rgba(0,0,0,.5);
+    border: 2px solid rgba(0,0,0,.18);
+}
+
+.pagination-item__link{
+    --height-pagination:40px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: rgba(0,0,0,.85);
+    min-width: 40px;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.pagination-item__link:hover{
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.pagination-item:hover .pagination-item--ellipsis{
+    color: #939393;
+}
+
+.pagination-item__icon{
+    font-size: 1rem;
+}
+
+/*Icon*/
+.icon-size-35 {
+    width: 35px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.icon {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -6px;
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: middle;
+}
