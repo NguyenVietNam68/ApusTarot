@@ -15,7 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a314b80a3a.js" crossorigin="anonymous"></script>
-    <title>Tarot - Apus Tarot Shop</title>
+    <title>Everyday Tarot - Apus Tarot Shop</title>
 </head>
 <body>
     <div class="app">
@@ -509,7 +509,172 @@
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-9 col-md-push-3">
-                            
+                            <div class="detail__wrapper">
+                                <div class="row detail__page">
+                                    <div class="detail-image__box col-sm-5">
+                                        <div class="detail-image__gallery">
+                                            <figure class="detail-image__gallery-wrapper">
+                                                <div class="detail-image__gallery-main">
+                                                    <img src="/image/Product/everydaytarot-2-300x300.jpg" alt="" class="detail-image__img" id="imgMain">
+                                                </div>
+                                                <div class="detail-image__gallery-sub">
+                                                    <label for="imgButton0" class="detail-image__gallery-item">
+                                                        <input checked="checked" name="imgSelect" type="radio" hidden class="detail-image__button" id="imgButton0">
+                                                        <img src="/image/Product/everydaytarot-2-300x300.jpg" alt="" class="imgSub detail-image__sub detail-image__visited">
+                                                    </label>
+                                                    <label for="imgButton1" class="detail-image__gallery-item">
+                                                        <input name="imgSelect" type="radio" hidden class="detail-image__button" id="imgButton1">
+                                                        <img src="/image/Product/everydaytarot.jpg" alt="" class="imgSub detail-image__sub detail-image__visited">
+                                                    </label>
+                                                    <label for="imgButton2" class="detail-image__gallery-item">
+                                                        <input name="imgSelect" type="radio" hidden class="detail-image__button" id="imgButton2">
+                                                        <img src="/image/Product/everydaytarot1.jpg" alt="" class="imgSub detail-image__sub detail-image__visited">
+                                                    </label>
+                                                </div>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <div class="detail-information col-sm-7">
+                                        <div class="detail-information__summary">
+                                            <h1 class="detail-information__title">Everyday Tarot</h1>
+                                            <p class="detail-information__price detail-has--old">
+                                                <span class="detail-information__price-old">
+                                                    800.000₫
+                                                </span>
+                                                <span class="detail-information__price-new">
+                                                    650.000₫
+                                                </span>
+                                            </p>
+                                            <div class="detail-information__description">
+                                                <p>
+                                                    Everyday Tarot đem đến một cách tiếp cận mới mẻ với Tarot, với bộ bài hiện đại, 
+                                                    được minh họa đẹp mắt, một hướng dẫn hữu ích cho các lá bài, và một hộp lưu niệm nhỏ nhắn xinh xắn.
+                                                </p>
+                                            </div>
+                                            <p class="detail-information__out-of-stock">
+                                                Hết Hàng
+                                            </p>
+                                            <div class="detail-information__has">
+                                                <p class="detail-information__status">Còn 1 bộ (có thể đặt trước)</p>
+                                                <form action="" method="post" class="detail-information__form">
+                                                    <div class="detail-information__quantity">
+                                                        <label for="quantityDetail" class="detail-information__quantity-label"></label>
+                                                        <input id="quantityDetail" type="number" class="detail-information__quantity-input" step="1" min="1" max="1000" value="1" size="4">
+                                                    </div>
+                                                    <button class="detail-information__button" name="add-to-cart">THÊM VÀO GIỎ HÀNG</button>
+                                                </form>
+                                            </div>
+                                            <div class="detail-information__meta">
+                                                <span class="detail-information__categories">
+                                                    Categories:
+                                                    <a href="" class="detail-information__categories-link" rel="tag">Bài cơ bản</a>,
+                                                    <a href="" class="detail-information__categories-link" rel="tag">Bài kỹ thuật số</a>,
+                                                    <a href="" class="detail-information__categories-link" rel="tag">Bài mạ cạnh</a>,
+                                                    <a href="" class="detail-information__categories-link" rel="tag">Tarot</a>
+                                                </span>
+                                                <span class="detail-information__tags">
+                                                    Tags:
+                                                    <a href="" class="detail-information__tags-link" rel="tag">card</a>,
+                                                    <a href="" class="detail-information__tags-link" rel="tag">fortune</a>,
+                                                    <a href="" class="detail-information__tags-link" rel="tag">tarot</a>,
+                                                    <a href="" class="detail-information__tags-link" rel="tag">tarot card</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail__tabs-wrapper">
+                                    <ul class="detail__tabs-list has--description" role="tablist" id="detailList">
+                                        <label for="descriptionSelect" class="detail__tabs-item" id="descriptionDetail">
+                                            <input type="radio" checked hidden name="detailSelect" id="descriptionSelect">
+                                            <span class="detail__tabs-link">DESCRIPTION</span>
+                                        </label>
+                                        <label for="reviewSelect" class="detail__tabs-item" id="reviewDetail">
+                                            <input type="radio" hidden name="detailSelect" id="reviewSelect">
+                                            <span class="detail__tabs-link">REVIEW(0)</span>
+                                        </label>
+                                    </ul>
+                                    <label class="detail__tabs-content" id="descriptionContent">
+                                        <div class="detail__tabs-description" id="description">
+                                            <h2 class="detail__tabs-heading">MÔ TẢ</h2>
+                                            <p>
+                                                Nghệ sĩ Vanessa Decort, tác giả bộ Sun and Moon là người rất yêu trẻ con, 
+                                                bởi vậy hình ảnh Sun and Moon như chúng ta thấy có phần ngây th ơ trong sáng. 
+                                                Động lực để tạo ra bộ bài này là trau dồi thêm sự hiểu biết của cô về Tarot, và chia sẻ kiến thức của mình với người yêu tarot khác.  
+                                                Đây là một bộ bài 78 lá bài truyền thống, với Major Arcana mang các tên gọi cổ điển, 
+                                                tuy nhiên có 2 lá đổi số cho nhau là Justice và Strength và Page được thay với Princess, Knight thay với Prince.
+                                                <br>
+                                                Khi bộ cầm bộ bài này, bạn sẽ ấn tượng mạnh một điều đó là màu sắc rất mạnh mẽ tạo nên tâm trạng mỗi lá bài. 
+                                                Một điểm khác là tất cả các nhân vật đều không có khuôn mặt, không có biểu hiện. 
+                                                Và nếu ai đó nghĩ rằng điều này làm cho các lá mơ hồ hoặc nghèo nàn, 
+                                                nó hoàn toàn ngược lại bởi Sun and Moon Tarot có thể dẫn bạn theo những quan điểm khác nhau: cách bạn đang nhìn vào các lá bài hoặc thậm chí, 
+                                                làm thế nào là các querent nhìn vào lá bài.
+                                            </p>
+                                        </div>
+                                    </label>
+                                    <label class="detail__tabs-content" id="reviewContent">
+                                        <div class="detail__tabs-description" id="review">
+                                            <h2 class="detail__tabs-heading">ĐÁNH GIÁ</h2>
+                                            <p>Không có đánh giá nào liên quan đến bộ bài</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <section class="related-product">
+                                    <h2 class="related-product__heading">SẢN PHẨM LIÊN QUAN</h2>
+                                    <ul class="related-product__list row">
+                                        <li class="col-sm-4 related-product__item">
+                                            <a href="./detail.html" class="product__link product-detail">
+                                                <img src="/image/Product/everydaytarot-2-300x300.jpg" alt="Everyday Tarot" class="product__image">
+                                                <div class="product__information">
+                                                    <h3 class="product__heading">Everyday Tarot</h3>
+                                                    <span class="product__price related-product__price">
+                                                        650.000₫
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <div class="product__buttons">
+                                                <span class="product__button-text addCart" id="addCart">ADD TO CART</span>
+                                                <span class="product__button-text MoreInfo">MORE INFO</span>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-4 related-product__item">
+                                            <a href="./detail.html" class="product__link product-detail">
+                                                <img src="/image/Product/everydaytarot-2-300x300.jpg" alt="Everyday Tarot" class="product__image">
+                                                <div class="product__information">
+                                                    <h3 class="product__heading">Everyday Tarot</h3>
+                                                    <span class="product__price related-product__price">
+                                                        650.000₫
+                                                    </span>
+                                                </div>
+                                            </a>
+                                            <div class="product__buttons">
+                                                <span class="product__button-text addCart" id="addCart">ADD TO CART</span>
+                                                <span class="product__button-text MoreInfo">MORE INFO</span>
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-4 related-product__item">
+                                            <a href="./detail.html" class="product__link product-detail">
+                                                <img src="/image/Product/everydaytarot-2-300x300.jpg" alt="Everyday Tarot" class="product__image">
+                                                <div class="product__information">
+                                                    <h3 class="product__heading">Everyday Tarot</h3>
+                                                    <div class="product__price has--old">
+                                                        <p class="product__price--old">
+                                                            1.650.000₫
+                                                        </p>
+                                                        <p class="product__price--new">
+                                                            650.000₫
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="product__buttons">
+                                                <span class="product__button-text addCart" id="addCart">ADD TO CART</span>
+                                                <span class="product__button-text MoreInfo">MORE INFO</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
                         </div>
                     </div>
                 </div>
